@@ -46,7 +46,7 @@ export const slice = createSlice({
     },
     extraReducers: (builder) => {
         builder.addCase(fetchCompletedTodos.fulfilled, (state, action) => {
-          // Do something 
+          state.todos = action.payload 
         });
       },
 })
